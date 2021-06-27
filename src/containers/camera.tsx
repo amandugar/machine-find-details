@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { actionCreators } from "../../state";
+import { actionCreators } from "../state";
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useHistory } from "react-router";
-import MobileLaptop from "../../utils/MobileLaptop";
-import CameraParent from "./CameraParent";
+import MobileLaptop from "../utils/MobileLaptop";
+import CameraParent from "../views/Camera";
 
 const Camera = () => {
   const dispatch = useDispatch();

@@ -1,17 +1,17 @@
-import Feedback from "../Feedback";
-import ContactUs from "../ContactUs";
-import ImageResult from "../ImageResult";
-import Login from "../Login";
-import Signup from "../Signup";
-import History from "../History";
-import SingleItem from "../SingleItem";
-import CapturedImage from "../capturedImage";
-import Chat from "../Chat";
-import Home from "../home";
+import Feedback from "../views/Feedback";
+import ContactUs from "../views/ContactUs";
+import ImageResult from "../views/ImageResult";
+import Login from "../views/Login";
+import Signup from "../views/Signup";
+import History from "../views/History";
+import SingleItem from "../views/SingleItem";
+import CapturedImage from "../views/capturedImage";
+import Chat from "../views/Chat";
+import Home from "../views/home";
 import { Route, Switch } from "react-router";
-import Microphone from "../Microphone";
-import AboutUs from "../AboutUs";
-import Camera from "../Camera/camera";
+import Microphone from "../views/Microphone";
+import AboutUs from "../views/AboutUs";
+import Camera from "../containers/camera";
 
 const Router = () => {
   return (

@@ -10,7 +10,7 @@ interface CameraProps {
   webcamRef: any;
 }
 
-const CameraParent: FC<CameraProps> = ({
+const Camera: FC<CameraProps> = ({
   videoConstraints,
   height,
   width,
@@ -44,4 +44,4 @@ const CameraParent: FC<CameraProps> = ({
   );
 };
 
-export default CameraParent;
+export default Camera;
