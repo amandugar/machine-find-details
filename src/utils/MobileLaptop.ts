@@ -1,4 +1,4 @@
-const MobileLaptop = () => {
+const MobileLaptop = (): object => {
   let videoConstraints: any = {
     aspectRatio: 16 / 9,
   };

@@ -1,7 +1,16 @@
 import { Center, Flex, Button, Box } from "@chakra-ui/react";
 import { FC } from "react";
 import Webcam from "react-webcam";
-const CameraParent: FC<any> = ({
+
+interface CameraProps {
+  videoConstraints: object;
+  height: number;
+  width: number;
+  capture: any;
+  webcamRef: any;
+}
+
+const CameraParent: FC<CameraProps> = ({
   videoConstraints,
   height,
   width,

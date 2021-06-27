@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { actionCreators, State } from "../../state";
-import { useDispatch, useSelector } from "react-redux";
-
+import { actionCreators } from "../../state";
+import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useHistory } from "react-router";
 import MobileLaptop from "../../utils/MobileLaptop";
@@ -24,7 +23,7 @@ const Camera = () => {
     return (): void => window.removeEventListener("resize", handleResize);
   }, []);
   const videoConstraints = MobileLaptop();
-  const capture = useCallback(() => {
+  const capture = useCallback((): void => {
     if (webcamRef) {
       const imageSrc = webcamRef.current.getScreenshot();
       saveImage(imageSrc);
